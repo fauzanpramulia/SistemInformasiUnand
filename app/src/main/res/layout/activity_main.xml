@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:orientation="vertical"
+    tools:context="com.fauzanpramulia.sisteminformasiunand.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:transitionName="open_mediaplayer"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="3dp">
+            <TextView
+                android:id="@+id/angkatan_2010"
+                style="@style/CategoryStyle"
+                android:background="@color/category_angkatan_10"
+                android:text="EINSSITECH" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:transitionName="open_mediaplayer"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="3dp">
+            <TextView
+                android:id="@+id/angkatan_2011"
+                style="@style/CategoryStyle"
+                android:background="@color/category_angkatan_11"
+                android:text="GGSI" />
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:transitionName="open_mediaplayer"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="3dp">
+            <TextView
+                android:id="@+id/angkatan_2012"
+                style="@style/CategoryStyle"
+                android:background="@color/category_execution_12"
+                android:text="EXECUTION" />
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:transitionName="open_mediaplayer"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="3dp">
+            <TextView
+                android:id="@+id/angkatan_2013"
+                style="@style/CategoryStyle"
+                android:background="@color/category_sintax_13"
+                android:text="SYNTAX" />
+        </android.support.v7.widget.CardView>
+        <!--?android:attr/selectableItemBackground-->
+
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:transitionName="open_mediaplayer"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="3dp">
+            <TextView
+                android:id="@+id/angkatan_2014"
+                style="@style/CategoryStyle"
+                android:background="@color/category_isofire_14"
+                android:text="ISOFIRE" />
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:transitionName="open_mediaplayer"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="3dp">
+            <TextView
+                android:id="@+id/angkatan_2015"
+                style="@style/CategoryStyle"
+                android:background="@color/category_asimetris_15"
+                android:text="ASIMETRI5" />
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:transitionName="open_mediaplayer"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="3dp">
+            <TextView
+                android:id="@+id/angkatan_2016"
+                style="@style/CategoryStyle"
+                android:background="@color/category_glorise_16"
+                android:text="GLORISE" />
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:transitionName="open_mediaplayer"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="3dp">
+            <TextView
+                android:id="@+id/angkatan_2017"
+                style="@style/CategoryStyle"
+                android:background="@color/category_integer8_17"
+                android:text="INTEGER8" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:transitionName="open_mediaplayer"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="3dp">
+            <TextView
+                android:id="@+id/angkatan_2018"
+                style="@style/CategoryStyle"
+                android:background="@color/category_angkatan_18"
+                android:text="ANGKATAN 18" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:transitionName="open_mediaplayer"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="3dp">
+            <TextView
+                android:id="@+id/angkatan_2019"
+                style="@style/CategoryStyle"
+                android:background="@color/category_angkatan_19"
+                android:text="ANGKATAN 19" />
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>
+

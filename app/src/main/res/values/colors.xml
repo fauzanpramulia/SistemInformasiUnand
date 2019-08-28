@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#ff8800</color>-->
+    <color name="colorPrimary">#363237</color>
+    <!--<color name="colorPrimaryDark">#d97410</color>-->
+    <color name="colorPrimaryDark">#1E1F26</color>
+    <color name="colorAccent">#FF4081</color>
+<!-- -->
+    <!--<color name="tan_background">#FFF7DA</color>-->
+    <color name="tan_background">#fff</color>
+    <color name="category_angkatan_10">#505160</color>
+    <color name="category_angkatan_11">#68829E</color>
+    <color name="category_execution_12">#AEBD38</color>
+    <color name="category_sintax_13">#598234</color>
+    <color name="category_isofire_14">#90AFC5</color>
+    <color name="category_asimetris_15">#336B87</color>
+    <color name="category_glorise_16">#2A3132</color>
+    <color name="category_integer8_17">#763626</color>
+    <color name="category_angkatan_18">#2C7873</color>
+    <color name="category_angkatan_19">#7C7873</color>
+
+
+</resources>
