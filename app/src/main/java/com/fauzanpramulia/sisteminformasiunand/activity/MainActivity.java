@@ -10,23 +10,25 @@ import android.widget.TextView;
 
 import com.fauzanpramulia.sisteminformasiunand.R;
 import com.fauzanpramulia.sisteminformasiunand.angkatan.SatuActivity;
+import com.fauzanpramulia.sisteminformasiunand.shared.Session;
 
 public class MainActivity extends AppCompatActivity {
-
+    Session session;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        session = new Session(this);
 
         TextView satuView = (TextView)findViewById(R.id.angkatan_2010);
         satuView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent satuIntent = new Intent(MainActivity.this, SatuActivity.class);
-                satuIntent.putExtra("angkatan","mahasiswa10");
-                satuIntent.putExtra("warna",R.color.category_angkatan_10);
-                satuIntent.putExtra("nama","EINSSITECH");
+                session.setAngkatan("mahasiswa10");
+                session.setWarna(R.color.category_angkatan_10);
+                session.setNama("EINSSITECH");
                 startActivity(satuIntent);
             }
         });
@@ -36,9 +38,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent duaIntent = new Intent(MainActivity.this, SatuActivity.class);
-                duaIntent.putExtra("angkatan","mahasiswa11");
-                duaIntent.putExtra("warna",R.color.category_angkatan_11);
-                duaIntent.putExtra("nama","GGSI");
+                session.setAngkatan("mahasiswa11");
+                session.setWarna(R.color.category_angkatan_11);
+                session.setNama("GGSI");
                 startActivity(duaIntent);
             }
         });
@@ -48,9 +50,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent tigaIntent = new Intent(MainActivity.this, SatuActivity.class);
-                tigaIntent.putExtra("angkatan","mahasiswa12");
-                tigaIntent.putExtra("warna",R.color.category_execution_12);
-                tigaIntent.putExtra("nama","EXECUTION");
+                session.setAngkatan("mahasiswa12");
+                session.setWarna(R.color.category_execution_12);
+                session.setNama("EXECUTION");
                 startActivity(tigaIntent);
             }
         });
@@ -60,9 +62,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent empatIntent = new Intent(MainActivity.this, SatuActivity.class);
-                empatIntent.putExtra("angkatan","mahasiswa13");
-                empatIntent.putExtra("warna",R.color.category_sintax_13);
-                empatIntent.putExtra("nama","SYNTAX");
+                session.setAngkatan("mahasiswa13");
+                session.setWarna(R.color.category_sintax_13);
+                session.setNama("SYNTAX");
                 startActivity(empatIntent);
             }
         });
@@ -71,9 +73,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent limaIntent = new Intent(MainActivity.this, SatuActivity.class);
-                limaIntent.putExtra("angkatan","mahasiswa14");
-                limaIntent.putExtra("warna",R.color.category_isofire_14);
-                limaIntent.putExtra("nama","ISOFIRE");
+                session.setAngkatan("mahasiswa14");
+                session.setWarna(R.color.category_isofire_14);
+                session.setNama("ISOFIRE");
                 startActivity(limaIntent);
             }
         });
@@ -83,9 +85,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent enamIntent = new Intent(MainActivity.this, SatuActivity.class);
-                enamIntent.putExtra("angkatan","mahasiswa15");
-                enamIntent.putExtra("warna",R.color.category_asimetris_15);
-                enamIntent.putExtra("nama","ASIMETRI5");
+                session.setAngkatan("mahasiswa15");
+                session.setWarna(R.color.category_asimetris_15);
+                session.setNama("ASIMETRI5");
                 startActivity(enamIntent);
             }
         });
@@ -94,9 +96,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent tujuhIntent = new Intent(MainActivity.this, SatuActivity.class);
-                tujuhIntent.putExtra("angkatan","mahasiswa16");
-                tujuhIntent.putExtra("warna",R.color.category_glorise_16);
-                tujuhIntent.putExtra("nama","GLORISE");
+                session.setAngkatan("mahasiswa16");
+                session.setWarna(R.color.category_glorise_16);
+                session.setNama("GLORISE");
                 startActivity(tujuhIntent);
             }
         });
@@ -105,9 +107,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent delIntent = new Intent(MainActivity.this, SatuActivity.class);
-                delIntent.putExtra("angkatan","mahasiswa17");
-                delIntent.putExtra("warna",R.color.category_integer8_17);
-                delIntent.putExtra("nama","INTEGER8");
+                session.setAngkatan("mahasiswa17");
+                session.setWarna(R.color.category_integer8_17);
+                session.setNama("INTEGER8");
                 startActivity(delIntent);
             }
         });
@@ -116,9 +118,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent sembilanIntent = new Intent(MainActivity.this, SatuActivity.class);
-                sembilanIntent.putExtra("angkatan","mahasiswa18");
-                sembilanIntent.putExtra("warna",R.color.category_angkatan_18);
-                sembilanIntent.putExtra("nama","ANGKATAN 18");
+                session.setAngkatan("mahasiswa18");
+                session.setWarna(R.color.category_angkatan_18);
+                session.setNama("ANGKATAN 18");
                 startActivity(sembilanIntent);
             }
         });
@@ -128,9 +130,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent sepuluhIntent = new Intent(MainActivity.this, SatuActivity.class);
-                sepuluhIntent.putExtra("angkatan","mahasiswa19");
-                sepuluhIntent.putExtra("warna",R.color.category_angkatan_19);
-                sepuluhIntent.putExtra("nama","ANGKATAN 19");
+                session.setAngkatan("mahasiswa19");
+                session.setWarna(R.color.category_angkatan_19);
+                session.setNama("ANGKATAN 19");
                 startActivity(sepuluhIntent);
             }
         });

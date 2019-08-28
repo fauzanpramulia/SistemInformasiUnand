@@ -1,4 +1,4 @@
-package com.fauzanpramulia.sisteminformasiunand;
+package com.fauzanpramulia.sisteminformasiunand.model;
 
 import java.io.Serializable;
 

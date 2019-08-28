@@ -18,10 +18,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".angkatan.SatuActivity"
-            android:label="ANGKATAN 10"/>
-        <activity android:name=".activity.SettingsActivity"
-            android:label="Settings"></activity>
+        <activity
+            android:name=".angkatan.SatuActivity"
+            android:label="ANGKATAN 10" />
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:label="Settings" />
+        <activity android:name=".angkatan.CustumeActivity"></activity>
     </application>
 
 </manifest>
