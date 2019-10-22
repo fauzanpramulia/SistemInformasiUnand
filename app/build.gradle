@@ -6,8 +6,8 @@ android {
         applicationId "com.fauzanpramulia.sisteminformasiunand"
         minSdkVersion 15
         targetSdkVersion 27
-        versionCode 104
-        versionName "1.0.4"
+        versionCode 106
+        versionName "1.0.6"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
