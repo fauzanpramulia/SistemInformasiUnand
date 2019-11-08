@@ -21,27 +21,18 @@
     <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
         <!-- android:textColorPrimary adalah warna teks title yang ada di Toolbar  -->
         <item name="android:textColorPrimary">@android:color/white</item>
+
         <!-- actionMenuTextColor adalah warna teks action (menu item)  -->
         <item name="actionMenuTextColor">@android:color/white</item>
-        <!-- Memberi warna accent untuk input field seperti checkbox -->
-<!--        <item name="colorAccent">@color/cursorAccent</item>-->
-        <!-- memberi warna view saat normal. -->
-<!--        <item name="colorControlNormal">@color/controlNormal</item>-->
-        <!-- Memberi warna saat view aktif (sedang diberi tanda cek atau di switch) -->
-<!--        <item name="colorControlActivated">@color/controlActivated</item>-->
-        <!-- Memberi warna kontrol untuk efek ripples atau pemilihan list -->
-<!--        <item name="colorControlHighlight">@color/controlActivated</item>-->
-
-        <!-- Tambahkan jika ingin memberi efek ripple saat memilih salah satu ikon -->
-        <!--
-        <item name="selectableItemBackground">?android:selectableItemBackground</item>
-        <item name="selectableItemBackgroundBorderless">?android:selectableItemBackground</item>
-        -->
+<!--        <item name="selectableItemBackground">?android:selectableItemBackground</item>-->
+<!--        <item name="selectableItemBackground">@android:color/white</item>-->
+<!--        <item name="selectableItemBackgroundBorderless">?android:selectableItemBackground</item>-->
     </style>
 
     <!-- Mengatur style title yang ada di dalam Toolbar -->
     <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
         <item name="android:textSize">21sp</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:color">@android:color/white</item>
     </style>
 </resources>

@@ -3,11 +3,11 @@ package com.fauzanpramulia.sisteminformasiunand.model;
 import java.io.Serializable;
 
 public class MahasiswaItem implements Serializable{
-    public String no, name, bp, fakultas,foto, jk;
+    public String no, nama, bp, fakultas,foto, jk;
 
-    public MahasiswaItem(String no, String name, String bp, String fakultas, String foto, String jk) {
+    public MahasiswaItem(String no, String nama, String bp, String fakultas, String foto, String jk) {
         this.no = no;
-        this.name = name;
+        this.nama = nama;
         this.bp = bp;
         this.fakultas = fakultas;
         this.foto = foto;
@@ -22,7 +22,7 @@ public class MahasiswaItem implements Serializable{
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.nama = name;
     }
 
     public void setBp(String bp) {
@@ -46,7 +46,7 @@ public class MahasiswaItem implements Serializable{
     }
 
     public String getName() {
-        return name;
+        return nama;
     }
 
     public String getBp() {

@@ -31,4 +31,7 @@
 
     <string name="slide_4_title">LENGKAP</string>
     <string name="slide_4_desc">Semua Daftar Nama Setiap Angkatan Di Sistem Informasi Tersedia Lengkap</string>
+
+    <string name="desk_rating">Dengan memberikan rating/penilaian pada aplikasi ini akan membantu untuk pengembangan selanjutnya</string>
+    <string name="title_rating">Berikan Rating Untuk Aplikasi!</string>
 </resources>

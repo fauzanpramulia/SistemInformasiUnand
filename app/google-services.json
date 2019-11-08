@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "622674002241",
+    "firebase_url": "https://sistem-informasi-ab2f0.firebaseio.com",
+    "project_id": "sistem-informasi-ab2f0",
+    "storage_bucket": "sistem-informasi-ab2f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622674002241:android:aafe831a2bdeb4d9a8a1c0",
+        "android_client_info": {
+          "package_name": "com.fauzanpramulia.sisteminformasiunand"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622674002241-1hosib7cor06j89mddsg9fc0v55fu1eo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fauzanpramulia.sisteminformasiunand",
+            "certificate_hash": "96ef72018602b91f3e77b3e47dfe4d4a4975c5cb"
+          }
+        },
+        {
+          "client_id": "622674002241-snuvk5iqo99bj2uu8kr56nlb9ug8gkj1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5Gr7iVIsZBd2BoMx7x1b7Q42CtIA9nIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622674002241-snuvk5iqo99bj2uu8kr56nlb9ug8gkj1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

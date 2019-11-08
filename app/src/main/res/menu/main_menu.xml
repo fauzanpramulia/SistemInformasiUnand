@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/cari_menu"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:iconTint="@android:color/white"
+        android:title="Cari Mahasiswa" />
     <item
         android:id="@+id/about"
         android:icon="@android:drawable/ic_menu_info_details"
         android:iconTint="@android:color/white"
         android:title="About" />
+    <item
+        android:id="@+id/rating"
+        android:icon="@android:drawable/arrow_up_float"
+        android:iconTint="@android:color/white"
+        android:title="Rating Apps"
+        />
+
 </menu>
