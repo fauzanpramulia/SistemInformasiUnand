@@ -1,32 +1,41 @@
 package com.fauzanpramulia.sisteminformasiunand;
 
 import android.content.Context;
-import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
-import android.widget.ArrayAdapter;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.fauzanpramulia.sisteminformasiunand.model.MahasiswaItem;
 import com.mikhaellopez.circularimageview.CircularImageView;
 
+import java.util.ArrayList;
 import java.util.List;
 
-import static java.security.AccessController.getContext;
-
 public class ListViewAdapter extends RecyclerView.Adapter<ListViewAdapter.MyViewHolder> {
-    private List<MahasiswaItem> mahasiswaItemList;
+    static List<MahasiswaItem> mahasiswaItemList;
 
-    private Context context;
+    Context context;
     private int colorId;
     RequestOptions requestOptions;
+    static OnItemClicked handler;
+
+    public void setDataMahasiswa(ArrayList<MahasiswaItem> data) {
+        this.mahasiswaItemList = data;
+        notifyDataSetChanged();
+    }
+
+    public void setHandler(OnItemClicked clickHandler) {
+        this.handler = clickHandler;
+    }
 
     public ListViewAdapter(List<MahasiswaItem> mahasiswaItemList, Context context, int colorId) {
         this.mahasiswaItemList = mahasiswaItemList;
@@ -40,20 +49,6 @@ public class ListViewAdapter extends RecyclerView.Adapter<ListViewAdapter.MyView
         View view;
         LayoutInflater inflater = LayoutInflater.from(context);
         view = inflater.inflate(R.layout.list_item, parent, false);
-
-//        final MyViewHolder viewHolder = new MyViewHolder(view);
-//        viewHolder.viewContainer.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent i = new Intent(context,MitosDetailActivity.class);
-//                i.putExtra("mitos_no",mData.get(viewHolder.getAdapterPosition()).getNo());
-//                i.putExtra("mitos_nama",mData.get(viewHolder.getAdapterPosition()).getMitos());
-//                i.putExtra("mitos_penjelasan",mData.get(viewHolder.getAdapterPosition()).getPenjelasan());
-//                context.startActivity(i);
-//            }
-//        });
-
-//        return viewHolder;
         return new MyViewHolder(view);
     }
 
@@ -77,7 +72,6 @@ public class ListViewAdapter extends RecyclerView.Adapter<ListViewAdapter.MyView
 //            imageView.setImageResource(R.mipmap.ic_launcher);
             Glide.with(context).load(mahasiswaItemList.get(position).getFoto()).into(holder.imageView);
 //            Glide.with(context).load(playerItem.getFoto()).apply(new RequestOptions().override(200, 200)).into(imageView);
-
         }
         int color = ContextCompat.getColor(context, colorId);
         holder.textContainer.setBackgroundColor(color);
@@ -104,6 +98,16 @@ public class ListViewAdapter extends RecyclerView.Adapter<ListViewAdapter.MyView
             textName = itemView.findViewById(R.id.text_nama);
             textBp = itemView.findViewById(R.id.text_bp);
             imageView = itemView.findViewById(R.id.image_view);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    handler.clik(mahasiswaItemList.get(getAdapterPosition()));
+                }
+            });
         }
+    }
+    public interface OnItemClicked{
+        void clik(MahasiswaItem m);
     }
 }

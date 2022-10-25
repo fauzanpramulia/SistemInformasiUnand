@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".angkatan.CustumeActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_margin="8dp"
+            android:id="@+id/txtDeskripsi"
+            android:text="Catatan!"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|textMultiLine"
+            android:gravity="top"
+            android:hint="Isi Catatan disini..."
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/simpan"
+            android:background="@color/category_angkatan_18"
+            android:textColor="@android:color/white"
+            android:text="Simpan"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

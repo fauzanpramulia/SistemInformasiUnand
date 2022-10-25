@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,170 +9,189 @@
     android:orientation="vertical"
     tools:context="com.fauzanpramulia.sisteminformasiunand.activity.MainActivity">
 
-    <LinearLayout
+    <include
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_margin="5dp"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:transitionName="open_mediaplayer"
-            card_view:cardCornerRadius="4dp"
-            card_view:cardElevation="3dp">
-            <TextView
-                android:id="@+id/angkatan_2010"
-                style="@style/CategoryStyle"
-                android:background="@color/category_angkatan_10"
-                android:text="EINSSITECH" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:transitionName="open_mediaplayer"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="3dp">
 
-        </android.support.v7.widget.CardView>
+                <TextView
+                    android:id="@+id/angkatan_2010"
+                    style="@style/CategoryStyle"
+                    android:background="@color/category_angkatan_10"
+                    android:text="EINSSITECH" />
 
-        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_margin="5dp"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:transitionName="open_mediaplayer"
-            card_view:cardCornerRadius="4dp"
-            card_view:cardElevation="3dp">
-            <TextView
-                android:id="@+id/angkatan_2011"
-                style="@style/CategoryStyle"
-                android:background="@color/category_angkatan_11"
-                android:text="GGSI" />
-        </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:transitionName="open_mediaplayer"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="3dp">
 
-        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_margin="5dp"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:transitionName="open_mediaplayer"
-            card_view:cardCornerRadius="4dp"
-            card_view:cardElevation="3dp">
-            <TextView
-                android:id="@+id/angkatan_2012"
-                style="@style/CategoryStyle"
-                android:background="@color/category_execution_12"
-                android:text="EXECUTION" />
-        </android.support.v7.widget.CardView>
+                <TextView
+                    android:id="@+id/angkatan_2011"
+                    style="@style/CategoryStyle"
+                    android:background="@color/category_angkatan_11"
+                    android:text="GGSI" />
+            </androidx.cardview.widget.CardView>
 
 
-        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_margin="5dp"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:transitionName="open_mediaplayer"
-            card_view:cardCornerRadius="4dp"
-            card_view:cardElevation="3dp">
-            <TextView
-                android:id="@+id/angkatan_2013"
-                style="@style/CategoryStyle"
-                android:background="@color/category_sintax_13"
-                android:text="SYNTAX" />
-        </android.support.v7.widget.CardView>
-        <!--?android:attr/selectableItemBackground-->
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:transitionName="open_mediaplayer"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="3dp">
+
+                <TextView
+                    android:id="@+id/angkatan_2012"
+                    style="@style/CategoryStyle"
+                    android:background="@color/category_execution_12"
+                    android:text="EXECUTION" />
+            </androidx.cardview.widget.CardView>
 
 
-        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_margin="5dp"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:transitionName="open_mediaplayer"
-            card_view:cardCornerRadius="4dp"
-            card_view:cardElevation="3dp">
-            <TextView
-                android:id="@+id/angkatan_2014"
-                style="@style/CategoryStyle"
-                android:background="@color/category_isofire_14"
-                android:text="ISOFIRE" />
-        </android.support.v7.widget.CardView>
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:transitionName="open_mediaplayer"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="3dp">
+
+                <TextView
+                    android:id="@+id/angkatan_2013"
+                    style="@style/CategoryStyle"
+                    android:background="@color/category_sintax_13"
+                    android:text="SYNTAX" />
+            </androidx.cardview.widget.CardView>
+            <!--?android:attr/selectableItemBackground-->
 
 
-        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_margin="5dp"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:transitionName="open_mediaplayer"
-            card_view:cardCornerRadius="4dp"
-            card_view:cardElevation="3dp">
-            <TextView
-                android:id="@+id/angkatan_2015"
-                style="@style/CategoryStyle"
-                android:background="@color/category_asimetris_15"
-                android:text="ASIMETRI5" />
-        </android.support.v7.widget.CardView>
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:transitionName="open_mediaplayer"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="3dp">
+
+                <TextView
+                    android:id="@+id/angkatan_2014"
+                    style="@style/CategoryStyle"
+                    android:background="@color/category_isofire_14"
+                    android:text="ISOFIRE" />
+            </androidx.cardview.widget.CardView>
 
 
-        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_margin="5dp"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:transitionName="open_mediaplayer"
-            card_view:cardCornerRadius="4dp"
-            card_view:cardElevation="3dp">
-            <TextView
-                android:id="@+id/angkatan_2016"
-                style="@style/CategoryStyle"
-                android:background="@color/category_glorise_16"
-                android:text="GLORISE" />
-        </android.support.v7.widget.CardView>
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:transitionName="open_mediaplayer"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="3dp">
+
+                <TextView
+                    android:id="@+id/angkatan_2015"
+                    style="@style/CategoryStyle"
+                    android:background="@color/category_asimetris_15"
+                    android:text="ASIMETRI5" />
+            </androidx.cardview.widget.CardView>
 
 
-        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_margin="5dp"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:transitionName="open_mediaplayer"
-            card_view:cardCornerRadius="4dp"
-            card_view:cardElevation="3dp">
-            <TextView
-                android:id="@+id/angkatan_2017"
-                style="@style/CategoryStyle"
-                android:background="@color/category_integer8_17"
-                android:text="INTEGER8" />
-        </android.support.v7.widget.CardView>
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:transitionName="open_mediaplayer"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="3dp">
 
-        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_margin="5dp"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:transitionName="open_mediaplayer"
-            card_view:cardCornerRadius="4dp"
-            card_view:cardElevation="3dp">
-            <TextView
-                android:id="@+id/angkatan_2018"
-                style="@style/CategoryStyle"
-                android:background="@color/category_angkatan_18"
-                android:text="ANGKATAN 18" />
+                <TextView
+                    android:id="@+id/angkatan_2016"
+                    style="@style/CategoryStyle"
+                    android:background="@color/category_glorise_16"
+                    android:text="GLORISE" />
+            </androidx.cardview.widget.CardView>
 
-        </android.support.v7.widget.CardView>
 
-        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_margin="5dp"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:transitionName="open_mediaplayer"
-            card_view:cardCornerRadius="4dp"
-            card_view:cardElevation="3dp">
-            <TextView
-                android:id="@+id/angkatan_2019"
-                style="@style/CategoryStyle"
-                android:background="@color/category_angkatan_19"
-                android:text="ANGKATAN 19" />
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:transitionName="open_mediaplayer"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="3dp">
 
-        </android.support.v7.widget.CardView>
-    </LinearLayout>
-</ScrollView>
+                <TextView
+                    android:id="@+id/angkatan_2017"
+                    style="@style/CategoryStyle"
+                    android:background="@color/category_integer8_17"
+                    android:text="INTEGER8" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:transitionName="open_mediaplayer"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="3dp">
+
+                <TextView
+                    android:id="@+id/angkatan_2018"
+                    style="@style/CategoryStyle"
+                    android:background="@color/category_angkatan_18"
+                    android:text="INFINITE" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:transitionName="open_mediaplayer"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="3dp">
+
+                <TextView
+                    android:id="@+id/angkatan_2019"
+                    style="@style/CategoryStyle"
+                    android:background="@color/category_angkatan_19"
+                    android:text="ANGKATAN 19" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
 
